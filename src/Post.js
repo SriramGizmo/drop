@@ -14,7 +14,8 @@ const Post = forwardRef(({
   verified,
   text,
   image,
-  avatar
+  avatar,
+  timestamp
 }, ref) => {
   return (
     <div className="post" ref={ref}>
@@ -39,10 +40,18 @@ const Post = forwardRef(({
         {image!=="" &&
         <img src={image} alt=""/>}
         <div className="post__footer">
-          <ChatBubbleOutlineIcon fontSize="small"/>
-          <RepeatIcon fontSize="small" />
-          <FavoriteBorderIcon fontSize="small" />
-          <PublishIcon fontSize="small"/>
+          <div className="post__footerReply">
+            <ChatBubbleOutlineIcon fontSize="medium"/>
+          </div>
+          <div className="post__footerRedrop">
+            <RepeatIcon fontSize="medium" />
+          </div>
+          <div className="post__footerLike">
+            <FavoriteBorderIcon fontSize="medium" />
+          </div>
+          <div className="post__footerShare">
+            <PublishIcon fontSize="medium"/>
+          </div>
 
         </div>
       </div>

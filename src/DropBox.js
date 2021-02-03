@@ -3,6 +3,7 @@ import './DropBox.css';
 import {Avatar, Button} from "@material-ui/core";
 import av from "./avatar.jpg"
 import db from "./firebase"
+import firebase from 'firebase'
 
 function DropBox() {
 
@@ -17,7 +18,8 @@ function DropBox() {
       verified: true,
       text: dropMessage,
       image: dropImage,
-      avatar: "https://image.freepik.com/free-vector/vintage-styled-sunset-with-palm-trees-silhouettes-logo-icon-gesign-template-black-background-vaporwave-sun_148087-297.jpg"
+      avatar: "https://image.freepik.com/free-vector/vintage-styled-sunset-with-palm-trees-silhouettes-logo-icon-gesign-template-black-background-vaporwave-sun_148087-297.jpg",
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setDropMessage("");
     setDropImage("");

@@ -50,3 +50,55 @@
   color: #adadad;
   font-weight: 400;
 }
+
+.post__footerReply {
+  padding-top:5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.post__footerReply:hover {
+  background-color: #eafee8;
+  border-radius:10px;
+  color: var(--drop-color);
+  transition: color 200ms ease-out;
+}
+
+.post__footerRedrop {
+  padding-top:5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.post__footerRedrop:hover {
+  background-color: #eafee8;
+  border-radius:10px;
+  color: var(--drop-color);
+  transition: color 200ms ease-out;
+}
+
+.post__footerLike {
+  padding-top:5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.post__footerLike:hover {
+  background-color: #eafee8;
+  border-radius:10px;
+  color: var(--drop-color);
+  transition: color 200ms ease-out;
+}
+
+.post__footerShare {
+  padding-top:5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.post__footerShare:hover {
+  background-color: #eafee8;
+  border-radius:10px;
+  color: var(--drop-color);
+  transition: color 200ms ease-out;
+}

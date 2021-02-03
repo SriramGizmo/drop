@@ -1,0 +1,16 @@
+body {
+  --drop-color: #64DD17;
+  --drop-background: #e9f0e6;
+
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+

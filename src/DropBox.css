@@ -1,0 +1,71 @@
+.dropBox {
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--drop-background);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.dropBox > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropBox__inputField {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.dropBox__input {
+  padding: 10px;
+  display: flex;
+}
+
+/* .dropBox__input > input {
+  flex: 1;
+  height: 80px;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+} */
+
+.dropBox__inputField > textarea {
+  flex: 1;
+  min-height: 50px;
+  overflow: auto;
+  font-size: 20px;
+  font: 1em Arial;
+  border: none;
+  resize: none;
+  padding-top: 10px;
+  outline: none;
+  border-bottom: 1px solid var(--drop-background);
+}
+
+.dropBox__imageInput {
+  flex: 2;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+  border-bottom: 1px solid var(--drop-background);
+
+}
+
+
+
+
+.dropBox__dropButton {
+  background-color: var(--drop-color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 700 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  width: 120px;
+  font-size: 18px !important;
+  height: 45px !important;
+  margin-left: auto !important;
+  margin-right: 10px !important;
+}

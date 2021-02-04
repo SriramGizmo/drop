@@ -1,0 +1,51 @@
+.login {
+  place-items: center;
+  margin: auto;
+}
+
+.login__box {
+  display: grid;
+  place-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: var(--drop-background);
+  border-radius: 30px;
+}
+
+.login__boxForm {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
+}
+
+.login__boxLogo {
+  color: var(--drop-color);
+  font-size: 80px !important;
+}
+
+.login__box > h1 {
+  color: var(--drop-color);
+  margin-bottom: 50px;
+}
+
+.login__boxField {
+  margin: 10px !important;
+}
+
+.login__boxButton {
+  margin: 10px !important;
+  background-color: var(--drop-color) !important;
+  color: white !important;
+}
+
+.login__register {
+  color: var(--drop-color);
+  cursor: pointer;
+}
+
+.login__boxForm > p {
+  margin-top: 20px;
+} 

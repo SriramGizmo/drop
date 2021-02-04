@@ -1,7 +1,8 @@
 import React from 'react';
 import './Sidebar.css'
 import SidebarOption from './SidebarOption'
-import InvertColorsIcon from '@material-ui/icons/InvertColors';import HomeIcon from '@material-ui/icons/Home';
+import InvertColorsIcon from '@material-ui/icons/InvertColors';
+import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@material-ui/icons/Search';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';

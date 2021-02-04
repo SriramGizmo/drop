@@ -2,9 +2,9 @@ import React from 'react'
 import "./Widgets.css"
 import {
   TwitterTimelineEmbed,
-  TwitterShareButton,
+  // TwitterShareButton,
   TwitterTweetEmbed,
-  TwitterFollowButton,
+  // TwitterFollowButton,
 } from "react-twitter-embed"
 import SearchIcon from '@material-ui/icons/Search';
 
@@ -27,15 +27,12 @@ function Widgets() {
           sourceType = "profile"
           screenName = "elonmusk"
           options={{height: "400"}}
-          noScrollbar="true"
+          noScrollbar={true}
           // noHeader="true"
           // noBorders="true"
           // noFooter="true"
         />
         
-        <TwitterShareButton
-          options={{ text: "Yo", via: "srirampraveenva"}}
-        />
       </div>
     </div>
   )

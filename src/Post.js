@@ -41,16 +41,16 @@ const Post = forwardRef(({
         <img src={image} alt=""/>}
         <div className="post__footer">
           <div className="post__footerReply">
-            <ChatBubbleOutlineIcon fontSize="medium"/>
+            <ChatBubbleOutlineIcon />
           </div>
           <div className="post__footerRedrop">
-            <RepeatIcon fontSize="medium" />
+            <RepeatIcon />
           </div>
           <div className="post__footerLike">
-            <FavoriteBorderIcon fontSize="medium" />
+            <FavoriteBorderIcon />
           </div>
           <div className="post__footerShare">
-            <PublishIcon fontSize="medium"/>
+            <PublishIcon />
           </div>
 
         </div>

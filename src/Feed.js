@@ -2,10 +2,13 @@ import React, {useState,useEffect} from 'react'
 import './Feed.css'
 import DropBox from './DropBox'
 import Post from './Post'
-import test from './test.jpg'
-import av from "./avatar.jpg"
-import db from './firebase'
+// import test from './test.jpg'
+// import av from "./avatar.jpg"
+import {db,auth} from './firebase'
 import FlipMove from 'react-flip-move'
+import { useDispatch } from 'react-redux'
+import { logout } from './features/userSlice'
+import { Button } from '@material-ui/core'
 
 
 function Feed() {
@@ -23,10 +26,21 @@ function Feed() {
     ))
   }, []);
 
+  const dispatch = useDispatch();
+
+  const logoutOfApp = () => {
+    dispatch(logout())
+    auth.signOut();
+  }
+
   return (
     <div className="feed">
       <div className="feed__header">
         <h2>Home</h2>
+        <Button 
+          className="feed__logoutButton"
+          onClick={logoutOfApp}
+          variant="contained">Log Out</Button>
       </div>
       
       <DropBox />

@@ -8,6 +8,8 @@
 
 .feed__header {
   position: sticky;
+  display: flex;
+  justify-content: space-between;
   top: 0;
   background-color: white;
   z-index: 100;

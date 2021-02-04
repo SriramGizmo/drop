@@ -1,24 +1,27 @@
 import React, {useState} from 'react';
 import './DropBox.css';
 import {Avatar, Button} from "@material-ui/core";
-import av from "./avatar.jpg"
-import db from "./firebase"
+import { db} from "./firebase"
 import firebase from 'firebase'
+import { useSelector } from 'react-redux';
+import { selectUser } from './features/userSlice';
 
 function DropBox() {
 
   const [dropMessage, setDropMessage] = useState("");
   const [dropImage, setDropImage] = useState("");
 
+  const user = useSelector(selectUser);
+
   const sendDrop = e => {
     e.preventDefault();
     db.collection('posts').add({
-      displayName: 'Elon Musk',
-      username: 'elonmusk',
-      verified: true,
+      displayName: user.displayName,
+      username: user.username,
+      verified: user.verified,
       text: dropMessage,
       image: dropImage,
-      avatar: "https://image.freepik.com/free-vector/vintage-styled-sunset-with-palm-trees-silhouettes-logo-icon-gesign-template-black-background-vaporwave-sun_148087-297.jpg",
+      avatar: user.photoURL,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setDropMessage("");
@@ -29,7 +32,7 @@ function DropBox() {
     <div className="dropBox">
       <form>
         <div className="dropBox__input">
-        <Avatar alt="Sriram" src={av} />
+        <Avatar alt={user.displayName} src={user.photoURL} />
         
         {/* <input placeholder= "What's poppin?" type="text"></input> */}
         <div className="dropBox__inputField">

@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import './DropBox.css';
 import {Avatar, Button} from "@material-ui/core";
-import { db} from "./firebase"
+import { db} from "../features/firebase"
 import firebase from 'firebase'
 import { useSelector } from 'react-redux';
-import { selectUser } from './features/userSlice';
+import { selectUser } from '../features/userSlice';
 
 function DropBox() {
 
@@ -17,6 +17,7 @@ function DropBox() {
     e.preventDefault();
     db.collection('posts').add({
       displayName: user.displayName,
+      uid: user.uid,
       username: user.username,
       verified: user.verified,
       text: dropMessage,
@@ -27,6 +28,8 @@ function DropBox() {
     setDropMessage("");
     setDropImage("");
   }
+
+  
 
   return (
     <div className="dropBox">

@@ -4,10 +4,10 @@ import DropBox from './DropBox'
 import Post from './Post'
 // import test from './test.jpg'
 // import av from "./avatar.jpg"
-import {db,auth} from './firebase'
+import {db,auth} from '../features/firebase'
 import FlipMove from 'react-flip-move'
 import { useDispatch } from 'react-redux'
-import { logout } from './features/userSlice'
+import { logout } from '../features/userSlice'
 import { Button } from '@material-ui/core'
 
 
@@ -48,7 +48,8 @@ function Feed() {
       <FlipMove>
       {posts.map(post => (
         <Post 
-        key={post.id}
+        id={post.id}
+        uid={post.uid}
         displayName={post.displayName}
         username={post.username}
         verified={post.verified}

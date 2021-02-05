@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 import './Login.css'
 import {TextField, Button} from '@material-ui/core'
 import InvertColorsIcon from '@material-ui/icons/InvertColors';
-import { auth, db } from "./firebase"
+import { auth, db } from "../features/firebase"
 import { useDispatch } from 'react-redux'
-import { login } from './features/userSlice'
+import { login } from '../features/userSlice'
 
 
 function Login() {

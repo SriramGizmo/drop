@@ -1,12 +1,12 @@
 import './App.css';
-import Sidebar from './Sidebar';
-import Feed from './Feed';
-import Widgets from './Widgets';
+import Sidebar from './components/Sidebar';
+import Feed from './components/Feed';
+import Widgets from './components/Widgets';
 import {useDispatch, useSelector} from "react-redux"
 import {login, logout, selectUser} from "./features/userSlice"
-import Login from './Login';
+import Login from './components/Login';
 import { useEffect } from 'react'
-import { auth, db } from './firebase';
+import { auth, db } from './features/firebase';
 
 function App() {
 

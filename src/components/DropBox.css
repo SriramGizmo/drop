@@ -22,20 +22,12 @@
   display: flex;
 }
 
-/* .dropBox__input > input {
-  flex: 1;
-  height: 80px;
-  margin-left: 20px;
-  font-size: 20px;
-  border: none;
-} */
 
 .dropBox__inputField > textarea {
   flex: 1;
   min-height: 50px;
   overflow: auto;
-  font-size: 20px;
-  font: 1em Arial;
+  font: 0.95em Arial !important;
   border: none;
   resize: none;
   padding-top: 10px;

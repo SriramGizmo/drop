@@ -6,6 +6,14 @@
   padding: 10px;
 }
 
+.postFull > h2{
+  font-size: 18px;
+  color: #adadad;
+  font-weight: 400;
+  padding: 10px;
+  border-bottom: 1px solid var(--drop-background);
+}
+
 .post__body {
   flex: 1;
   padding: 10px;
@@ -29,7 +37,6 @@
 
 .post__headerText > h3 {
   font-size: 15px;
-  margin-bottom: 5px;
 }
 
 .post__footer {
@@ -49,6 +56,19 @@
   font-size: 14px;
   color: #adadad;
   font-weight: 400;
+}
+
+.post__headerText {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post__headerTimestamp {
+  font-size: 12px;
+  color: #adadad;
+  font-weight: 400;
+  padding-top: 3px;;
 }
 
 .post__footerReply {
@@ -90,13 +110,13 @@
   transition: color 200ms ease-out;
 }
 
-.post__footerShare {
+.post__footerDelete {
   padding-top:5px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.post__footerShare:hover {
+.post__footerDelete:hover {
   background-color: #eafee8;
   border-radius:10px;
   color: var(--drop-color);
